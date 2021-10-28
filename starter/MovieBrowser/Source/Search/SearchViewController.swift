@@ -27,7 +27,6 @@ class SearchViewController: UITableViewController {
         
         resultSearchController = ({
             let searchController = UISearchController(searchResultsController: nil)
-            //searchController.delegate = self
             searchController.searchBar.delegate = self
             searchController.hidesNavigationBarDuringPresentation = false
             searchController.obscuresBackgroundDuringPresentation = false
