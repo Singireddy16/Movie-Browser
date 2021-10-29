@@ -41,7 +41,7 @@ struct MovieAPI: WebAPIHandler {
             }
             if let mData = response as? Data {
                 let decoder = JSONDecoder()
-                let mData = try! decoder.decode(MovieContainer.self, from: mData)
+                let mData = try? decoder.decode(MovieContainer.self, from: mData)
                 completion(mData, nil)
             }
         }

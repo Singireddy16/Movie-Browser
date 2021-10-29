@@ -47,7 +47,6 @@ class MovieDetailViewController: UIViewController {
         getImageFor(path: path) { Data in
             if let image = UIImage.init(data: Data) {
                 DispatchQueue.main.async {
-                    //self.posterImage.image = UIImage.init(data: Data)
                     self.configure(image: image)
                 }
             }
